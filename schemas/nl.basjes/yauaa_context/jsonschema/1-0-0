@@ -9,180 +9,181 @@
     },
     "type": "object",
     "properties": {
-        "DeviceClass": {
-            "description": "Examples: Desktop, Mobile, Tablet, Phone, TV, Unknown. See https://yauaa.basjes.nl/README-Output.html",
-            "type": "string"
+        "deviceClass": {
+            "description": "See https://yauaa.basjes.nl/README-Output.html",
+            "enum": ["Desktop", "Anonymized", "Unknown", "Mobile", "Tablet", "Phone", "Watch", "Virtual Reality", "eReader", "Set-top box", "TV", "Game Console", "Handheld Game Console", "Voice", "Robot", "Robot Mobile", "Spy", "Hacker"]
         },
-        "DeviceName": {
+        "deviceName": {
             "description": "Example: Google Nexus 6",
             "type": "string"
         },
-        "DeviceBrand": {
+        "deviceBrand": {
             "description": "Example: Google",
             "type": "string"
         },
-        "DeviceCpu": {
+        "deviceCpu": {
             "type": "string"
         },
-        "DeviceCpuBits": {
+        "deviceCpuBits": {
             "type": "string"
         },
-        "DeviceFirmwareVersion": {
+        "deviceFirmwareVersion": {
             "type": "string"
         },
-        "DeviceVersion": {
+        "deviceVersion": {
             "type": "string"
         },
-        "OperatingSystemClass": {
-            "description": "Examples: Desktop, Mobile, Cloud, Embedded, Unknown. See https://yauaa.basjes.nl/README-Output.html",
-            "type": "string"
+        "operatingSystemClass": {
+            "description": "See https://yauaa.basjes.nl/README-Output.html",
+            "enum": ["Desktop", "Mobile", "Cloud", "Embedded", "Game Console", "Hacker", "Anonymized", "Unknown"]
         },
-        "OperatingSystemName": {
+        "operatingSystemName": {
             "description": "Examples: Linux, Android.",
             "type": "string"
         },
-        "OperatingSystemVersion": {
+        "operatingSystemVersion": {
             "type": "string"
         },
-        "OperatingSystemNameVersion": {
+        "operatingSystemNameVersion": {
             "type": "string"
         },
-        "OperatingSystemVersionBuild": {
+        "operatingSystemVersionBuild": {
             "type": "string"
         },
-        "LayoutEngineClass": {
-            "description": "Examples: Browser, Mobile App, Robot, Unkwown. See https://yauaa.basjes.nl/README-Output.html",
+        "layoutEngineClass": {
+            "description": "See https://yauaa.basjes.nl/README-Output.html",
+            "enum": ["Browser", "Mobile App", "Hacker", "Robot", "Unknown"]
+        },
+        "layoutEngineName": {
             "type": "string"
         },
-        "LayoutEngineName": {
+        "layoutEngineVersion": {
             "type": "string"
         },
-        "LayoutEngineVersion": {
+        "layoutEngineVersionMajor": {
             "type": "string"
         },
-        "LayoutEngineVersionMajor": {
+        "layoutEngineNameVersion": {
             "type": "string"
         },
-        "LayoutEngineNameVersion": {
+        "layoutEngineNameVersionMajor": {
             "type": "string"
         },
-        "LayoutEngineNameVersionMajor": {
+        "layoutEngineBuild": {
             "type": "string"
         },
-        "LayoutEngineBuild": {
-            "type": "string"
+        "agentClass": {
+            "description": "See https://yauaa.basjes.nl/README-Output.html",
+            "enum": ["Browser", "Browser Webview", "Mobile App", "Robot", "Robot Mobile", "Cloud Application", "Email Client", "Voice", "Special", "Testclient", "Hacker", "Unknown"]
         },
-        "AgentClass": {
-            "description": "Examples: Browser, Browser Webview, Mobile App, Robot, Email Client, Unknown. See https://yauaa.basjes.nl/README-Output.html",
-            "type": "string"
-        },
-        "AgentName": {
+        "agentName": {
             "description": "Example: Chrome.",
             "type": "string"
         },
-        "AgentVersion": {
+        "agentVersion": {
             "type": "string"
         },
-        "AgentVersionMajor": {
+        "agentVersionMajor": {
             "type": "string"
         },
-        "AgentNameVersion": {
+        "agentNameVersion": {
             "type": "string"
         },
-        "AgentNameVersionMajor": {
+        "agentNameVersionMajor": {
             "type": "string"
         },
-        "AgentBuild": {
+        "agentBuild": {
             "type": "string"
         },
-        "AgentLanguage": {
+        "agentLanguage": {
             "type": "string"
         },
-        "AgentLanguageCode": {
+        "agentLanguageCode": {
             "type": "string"
         },
-        "AgentInformationEmail": {
+        "agentInformationEmail": {
             "type": "string"
         },
-        "AgentInformationUrl": {
+        "agentInformationUrl": {
             "type": "string"
         },
-        "AgentSecurity": {
+        "agentSecurity": {
+            "type": "string",
+            "enum": ["Weak security", "Strong security", "Unknown", "Hacker"]
+        },
+        "agentUuid": {
             "type": "string"
         },
-        "AgentUuid": {
+        "webviewAppName": {
             "type": "string"
         },
-        "WebviewAppName": {
+        "webviewAppVersion": {
             "type": "string"
         },
-        "WebviewAppVersion": {
+        "webviewAppVersionMajor": {
             "type": "string"
         },
-        "WebviewAppVersionMajor": {
+        "webviewAppNameVersionMajor": {
             "type": "string"
         },
-        "WebviewAppNameVersionMajor": {
+        "facebookCarrier": {
             "type": "string"
         },
-        "FacebookCarrier": {
+        "facebookDeviceClass": {
             "type": "string"
         },
-        "FacebookDeviceClass": {
+        "facebookDeviceName": {
             "type": "string"
         },
-        "FacebookDeviceName": {
+        "facebookDeviceVersion": {
             "type": "string"
         },
-        "FacebookDeviceVersion": {
+        "facebookFBOP": {
             "type": "string"
         },
-        "FacebookFBOP": {
+        "facebookFBSS": {
             "type": "string"
         },
-        "FacebookFBSS": {
+        "facebookOperatingSystemName": {
             "type": "string"
         },
-        "FacebookOperatingSystemName": {
+        "facebookOperatingSystemVersion": {
             "type": "string"
         },
-        "FacebookOperatingSystemVersion": {
+        "anonymized": {
             "type": "string"
         },
-        "Anonymized": {
+        "hackerAttackVector": {
             "type": "string"
         },
-        "HackerAttackVector": {
+        "hackerToolkit": {
             "type": "string"
         },
-        "HackerToolkit": {
+        "koboAffiliate": {
             "type": "string"
         },
-        "KoboAffiliate": {
+        "koboPlatformId": {
             "type": "string"
         },
-        "KoboPlatformId": {
+        "iECompatibilityVersion": {
             "type": "string"
         },
-        "IECompatibilityVersion": {
+        "iECompatibilityVersionMajor": {
             "type": "string"
         },
-        "IECompatibilityVersionMajor": {
+        "iECompatibilityNameVersion": {
             "type": "string"
         },
-        "IECompatibilityNameVersion": {
+        "iECompatibilityNameVersionMajor": {
             "type": "string"
         },
-        "IECompatibilityNameVersionMajor": {
+        "carrier": {
             "type": "string"
         },
-        "Carrier": {
+        "gSAInstallationID": {
             "type": "string"
         },
-        "GSAInstallationID": {
-            "type": "string"
-        },
-        "NetworkType": {
+        "networkType": {
             "type": "string"
         }
     },
